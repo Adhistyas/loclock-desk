@@ -545,6 +545,10 @@ applyCameraButton
                     cameraStatus.textContent =
                         "Camera: Active";
 
+                    if (stopCameraButton) {
+                        stopCameraButton.disabled = false;
+                    }
+
                 } else {
 
                     cameraStatus.textContent =
@@ -609,6 +613,10 @@ if (stopCameraButton) {
 
                     cameraStatus.textContent =
                         "Camera: Inactive";
+
+                    if (stopCameraButton) {
+                        stopCameraButton.disabled = true;
+                    }
 
                 } else {
 
