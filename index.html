@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loclock Desktop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Loclock</h1>
+
+        <p class="subtitle">
+            Location & Virtual Camera
+        </p>
+
+        <!-- LOCATION -->
+
+        <div class="card">
+
+            <h2>📍 Location</h2>
+
+            <label>
+                Latitude
+            </label>
+
+            <input id="latitude" type="number" step="0.000001" value="-6.306746">
+
+            <label>
+                Longitude
+            </label>
+
+            <input id="longitude" type="number" step="0.000001" value="106.820456">
+
+            <label>
+                Radius
+            </label>
+
+            <input id="radius" type="number" value="10" disabled>
+
+            <button id="randomizeButton">
+                🎲 Randomize Location
+            </button>
+
+            <button id="applyButton" class="primary">
+                📍 Terapkan Lokasi
+            </button>
+
+        </div>
+
+
+        <!-- VIRTUAL CAMERA -->
+
+        <div class="card">
+
+            <h2>📷 Virtual Camera</h2>
+
+            <div id="imagePreviewContainer" class="image-preview-container">
+                <div id="emptyPreview" class="empty-preview">
+                    Belum ada foto
+                </div>
+
+                <img id="imagePreview" alt="Preview">
+            </div>
+
+            <input id="photoInput" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+
+            <button id="uploadButton">
+                📁 Upload Foto
+            </button>
+
+            <button id="applyCameraButton" class="primary" disabled>
+                📷 Terapkan sebagai Kamera
+            </button>
+
+            <p id="cameraStatus">
+                Camera: Belum aktif
+            </p>
+
+        </div>
+
+
+        <!-- BROWSER -->
+
+        <div class="card">
+
+            <h2>🌐 Browser</h2>
+
+            <button id="openAddressButton">
+                Buka Test My Address
+            </button>
+
+            <button id="openCameraButton">
+                Buka Test Camera
+            </button>
+
+            <p id="status">
+                Status: Ready
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="renderer.js"></script>
+
+</body>
+
+</html>

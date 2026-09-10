@@ -1,0 +1,16 @@
+{
+  "name": "loclock-desk",
+  "version": "1.0.0",
+  "description": "desktop application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^44.3.0"
+  }
+}
